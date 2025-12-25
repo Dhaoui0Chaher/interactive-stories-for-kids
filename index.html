@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رحلة قصصية بتطبيقات واقعية للأطفال والمراهقين</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Tajawal', sans-serif;
+        }
+        
+        .gradient-purple-blue {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .gradient-blue {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        
+        .gradient-orange {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #5B5FE3 0%, #8B5FE3 50%, #B35FE3 100%);
+        }
+        
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .star-rating {
+            color: #fbbf24;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex gap-6 items-center">
+                <a href="#" class="text-gray-700 hover:text-purple-600">تسجيل الدخول</a>
+                <a href="#" class="text-gray-700 hover:text-purple-600">من نحن</a>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="/placeholder.svg?height=40&width=40" alt="Logo" class="h-10">
+                <span class="text-xl font-bold text-purple-600">أثر الضوء</span>
+            </div>
+            <div class="flex gap-6">
+                <a href="#" class="text-gray-700 hover:text-purple-600">الموارد</a>
+                <a href="#" class="text-gray-700 hover:text-purple-600">الصفحة</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20 relative overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-sm mb-4 opacity-90">منصة تعليمية تفاعلية لتنمية مهارات القراءة والكتابة للأطفال والمراهقين</p>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                    رحلة قصصية بتطبيقات واقعية<br>للأطفال والمراهقين
+                </h1>
+                <div class="flex justify-center gap-4 mb-12">
+                    <button class="bg-white text-purple-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition">ابدأ الآن</button>
+                    <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-purple-600 transition">تعلم المزيد</button>
+                </div>
+                
+                <!-- Phone Mockup -->
+                <div class="relative flex justify-center">
+                    <div class="bg-gradient-to-br from-teal-500 to-teal-700 rounded-2xl p-6 max-w-sm shadow-2xl">
+                        <div class="bg-white rounded-lg p-4 mb-4 flex items-center gap-3">
+                            <img src="/placeholder.svg?height=50&width=50" alt="Book" class="h-12 w-12 rounded">
+                            <div class="text-right flex-1">
+                                <h3 class="text-gray-800 font-bold text-sm">كيف نجعل أطفالنا أكثر إيجابية</h3>
+                                <p class="text-gray-500 text-xs">قصة تفاعلية • 15 دقيقة</p>
+                            </div>
+                            <span class="bg-green-500 text-white text-xs px-2 py-1 rounded">جديد</span>
+                        </div>
+                        <div class="bg-teal-800 rounded-lg p-3 text-white text-right">
+                            <p class="text-xs mb-2">تقدم القراءة</p>
+                            <div class="bg-teal-600 rounded-full h-2 mb-2">
+                                <div class="bg-yellow-400 h-2 rounded-full" style="width: 65%"></div>
+                            </div>
+                            <p class="text-xs">65٪ مكتمل</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">نبذة عن المجموعة</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                نقدم منصة تعليمية فريدة تجمع بين القصص التفاعلية والتطبيقات العملية لتنمية مهارات الأطفال والمراهقين في القراءة والكتابة والإبداع بطريقة ممتعة ومبتكرة تساعدهم على التعلم والنمو
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md text-center card-hover">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">سهلة الاستخدام</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        منصة بسيطة وسهلة الاستخدام للأطفال تتيح لهم التنقل بين القصص والأنشطة بكل سهولة ويسر
+                    </p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md text-center card-hover">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-lightbulb text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">محتوى إبداعي</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        قصص مبتكرة وأنشطة تفاعلية تحفز الخيال والإبداع لدى الأطفال وتساعدهم على التفكير النقدي
+                    </p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md text-center card-hover">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chart-line text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">تتبع التقدم بالكامل</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        نظام متقدم لتتبع تقدم الطفل في القراءة والكتابة مع تقارير مفصلة للآباء والمعلمين
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">رؤيتنا</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-white text-xs"></i>
+                            </div>
+                            <p class="text-gray-700">بناء جيل من الأطفال والمراهقين المبدعين القادرين على التفكير النقدي</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-white text-xs"></i>
+                            </div>
+                            <p class="text-gray-700">توفير منصة تعليمية شاملة تجمع بين المتعة والفائدة التعليمية</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-white text-xs"></i>
+                            </div>
+                            <p class="text-gray-700">تطوير مهارات القراءة والكتابة من خلال قصص تفاعلية وأنشطة متنوعة</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-white text-xs"></i>
+                            </div>
+                            <p class="text-gray-700">خلق بيئة آمنة ومحفزة للأطفال لاستكشاف عالم القراءة والإبداع</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="/placeholder.svg?height=400&width=400" alt="Vision" class="rounded-2xl shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">اكتشف المميز هذا الشهر</h2>
+            <p class="text-center text-gray-600 mb-8">استكشف أحدث القصص والأنشطة التفاعلية المصممة خصيصاً لإثراء خيال طفلك</p>
+            
+            <div class="max-w-4xl mx-auto">
+                <img src="/placeholder.svg?height=400&width=800" alt="Featured Story" class="rounded-2xl shadow-xl w-full mb-6">
+                
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-bold mb-4 text-center">السير لتحقيق رحلة يملؤها نجاح</h3>
+                    <p class="text-gray-600 text-center leading-relaxed mb-6">
+                        قصة ملهمة عن طفل يحلم بالطيران ويسعى لتحقيق أحلامه رغم كل التحديات. تعلم معنا كيف يمكن للإصرار والعزيمة أن يحولا الأحلام إلى حقيقة من خلال هذه الرحلة التفاعلية المليئة بالدروس القيمة والمغامرات المثيرة
+                    </p>
+                    <div class="flex justify-center gap-4">
+                        <button class="bg-purple-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-purple-700 transition">ابدأ القراءة</button>
+                        <button class="bg-orange-500 text-white px-8 py-3 rounded-lg font-bold hover:bg-orange-600 transition">معرفة المزيد</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Tools Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">أدوات تفاعلية تحمل الواقع إلى تجربة حياتية</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                نوفر مجموعة من الأدوات التفاعلية التي تساعد الأطفال على تطبيق ما تعلموه في حياتهم اليومية
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
+                <!-- Blue Card -->
+                <div class="gradient-blue text-white p-8 rounded-2xl shadow-xl">
+                    <h3 class="text-2xl font-bold mb-6 text-center">للأطفال والمراهقين</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <div class="flex items-center gap-3 mb-2">
+                                <i class="fas fa-book-open text-xl"></i>
+                                <h4 class="font-bold">مكتبة القصص</h4>
+                            </div>
+                            <p class="text-sm opacity-90">مجموعة واسعة من القصص التفاعلية المناسبة لجميع الأعمار</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <div class="flex items-center gap-3 mb-2">
+                                <i class="fas fa-pencil-alt text-xl"></i>
+                                <h4 class="font-bold">ورشة الكتابة الإبداعية</h4>
+                            </div>
+                            <p class="text-sm opacity-90">أدوات تساعد الأطفال على كتابة قصصهم الخاصة وتطوير مهاراتهم</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <div class="flex items-center gap-3 mb-2">
+                                <i class="fas fa-gamepad text-xl"></i>
+                                <h4 class="font-bold">ألعاب تعليمية تفاعلية</h4>
+                            </div>
+                            <p class="text-sm opacity-90">ألعاب ممتعة تعزز مهارات القراءة والفهم لدى الأطفال</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Orange Card -->
+                <div class="gradient-orange text-white p-8 rounded-2xl shadow-xl">
+                    <h3 class="text-2xl font-bold mb-6 text-center">للأهل والمعلمين</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <div class="flex items-center gap-3 mb-2">
+                                <i class="fas fa-chart-bar text-xl"></i>
+                                <h4 class="font-bold">لوحة تتبع التقدم</h4>
+                            </div>
+                            <p class="text-sm opacity-90">تقارير مفصلة عن تقدم الطفل ونقاط القوة والضعف</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <div class="flex items-center gap-3 mb-2">
+                                <i class="fas fa-users text-xl"></i>
+                                <h4 class="font-bold">أدوات تعليمية للمعلمين</h4>
+                            </div>
+                            <p class="text-sm opacity-90">موارد تعليمية وخطط دروس جاهزة للاستخدام في الفصل</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <div class="flex items-center gap-3 mb-2">
+                                <i class="fas fa-shield-alt text-xl"></i>
+                                <h4 class="font-bold">بيئة آمنة ومراقبة</h4>
+                            </div>
+                            <p class="text-sm opacity-90">ضوابط أمان متقدمة لحماية الأطفال أثناء التصفح</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">ماذا يقول الأثرياء</h2>
+            <p class="text-center text-gray-600 mb-12">آراء وتجارب المستخدمين والمعلمين حول منصتنا التعليمية</p>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="/placeholder.svg?height=50&width=50" alt="User" class="w-12 h-12 rounded-full">
+                        <div>
+                            <h4 class="font-bold">منى العلي</h4>
+                            <div class="flex star-rating text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        منصة رائعة ساعدت ابنتي كثيراً في تحسين مهارات القراءة. القصص التفاعلية ممتعة جداً والأنشطة متنوعة. أنصح بها بشدة لكل أم تبحث عن طريقة ممتعة لتعليم أطفالها
+                    </p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="/placeholder.svg?height=50&width=50" alt="User" class="w-12 h-12 rounded-full">
+                        <div>
+                            <h4 class="font-bold">أحمد السالم</h4>
+                            <div class="flex star-rating text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        كمعلم، وجدت هذه المنصة أداة قيمة جداً في الفصل. التقارير التفصيلية تساعدني في متابعة تقدم كل طالب. المحتوى التعليمي عالي الجودة ومناسب للمناهج الدراسية
+                    </p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="/placeholder.svg?height=50&width=50" alt="User" class="w-12 h-12 rounded-full">
+                        <div>
+                            <h4 class="font-bold">سارة محمود</h4>
+                            <div class="flex star-rating text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        أولادي يحبون القصص التفاعلية ويقضون وقتاً ممتعاً في التعلم. لاحظت تحسناً كبيراً في مستواهم القرائي خلال شهرين فقط. المنصة سهلة الاستخدام وآمنة للأطفال
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">الأسئلة الشائعة</h2>
+            
+            <div class="max-w-3xl mx-auto space-y-1">
+                <div class="faq-item py-6">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-bold text-lg">ما هي الفئة العمرية المستهدفة؟</h3>
+                        <i class="fas fa-chevron-down text-gray-400"></i>
+                    </div>
+                </div>
+                
+                <div class="faq-item py-6">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-bold text-lg">هل المحتوى متوفر باللغة العربية؟</h3>
+                        <i class="fas fa-chevron-down text-gray-400"></i>
+                    </div>
+                </div>
+                
+                <div class="faq-item py-6">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-bold text-lg">كيف يمكنني متابعة تقدم طفلي؟</h3>
+                        <i class="fas fa-chevron-down text-gray-400"></i>
+                    </div>
+                </div>
+                
+                <div class="faq-item py-6">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-bold text-lg">هل يمكن استخدام المنصة في المدارس؟</h3>
+                        <i class="fas fa-chevron-down text-gray-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="hero-gradient text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">انضم إلى قائمتنا البريدية</h2>
+            <p class="mb-8 opacity-90">احصل على آخر الأخبار والقصص الجديدة مباشرة في بريدك الإلكتروني</p>
+            
+            <div class="max-w-md mx-auto flex gap-3">
+                <input type="email" placeholder="أدخل بريدك الإلكتروني" class="flex-1 px-6 py-3 rounded-lg text-gray-800">
+                <button class="bg-orange-500 text-white px-8 py-3 rounded-lg font-bold hover:bg-orange-600 transition">اشترك</button>
+            </div>
+            
+            <p class="text-sm mt-6 opacity-75">
+                بالاشتراك، أنت توافق على سياسة الخصوصية وشروط الاستخدام الخاصة بنا
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Column 1 -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">معلومات عنا</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">من نحن</a></li>
+                        <li><a href="#" class="hover:text-white transition">فريق العمل</a></li>
+                        <li><a href="#" class="hover:text-white transition">وظائف</a></li>
+                        <li><a href="#" class="hover:text-white transition">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 2 -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">الموارد مفيدة</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">مركز المساعدة</a></li>
+                        <li><a href="#" class="hover:text-white transition">دليل الاستخدام</a></li>
+                        <li><a href="#" class="hover:text-white transition">الأسئلة الشائعة</a></li>
+                        <li><a href="#" class="hover:text-white transition">المدونة</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">الصفحة الرئيسية</a></li>
+                        <li><a href="#" class="hover:text-white transition">القصص</a></li>
+                        <li><a href="#" class="hover:text-white transition">الأنشطة</a></li>
+                        <li><a href="#" class="hover:text-white transition">الأسعار</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">تابعنا</h3>
+                    <p class="text-sm mb-4">
+                        ابق على اطلاع بآخر الأخبار والقصص الجديدة من خلال متابعتنا على وسائل التواصل الاجتماعي
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2025 أثر الضوء. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
